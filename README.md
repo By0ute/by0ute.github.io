@@ -7,7 +7,7 @@ Pieces of code
 
 
 ## Website
-This website runs thanks to Jekyll, with the theme [Mickey](http://vincentchan.github.io/mickey) made by [Vincent Chan](https://github.com/vincentchan)
+This website runs thanks to [Jekyll](http://jekyllrb.com/), with the theme [Mickey](http://vincentchan.github.io/mickey) made by [Vincent Chan](https://github.com/vincentchan)
 
 ## License
 Open sourced under the [MIT license](LICENSE.md).
