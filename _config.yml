@@ -4,7 +4,8 @@ markdown:            redcarpet
 highlighter:         pygments
 
 # Permalinks
-permalink:           /:title
+# permalink:           /:title
+# permalink:           /
 relative_permalinks: true
 
 # Setup
