@@ -4,8 +4,7 @@ markdown:            redcarpet
 highlighter:         pygments
 
 # Permalinks
-# permalink:           /:title
-# permalink:           /
+permalink:           /:title
 relative_permalinks: true
 
 # Setup
@@ -15,9 +14,9 @@ name:				         Byoute.io
 title:               Byoute ++
 tagline:             'tagline'
 description:         Byoute's pieces of code
-url:                 http://byoute.io
+url:                 http://by0ute.github.io/
 rss:                 rss feed url
-baseurl:             '/'
+# baseurl:             ''
 baseurl_posts_img:   '/assets/images/posts/'
 baseurl_featured_img: '/assets/images/hero/'
 baseurl_featured_thumbnail: '/assets/images/thumbnail/'
@@ -29,9 +28,9 @@ author:
   name:              Byoute
   url:               http://byoute.io
   facebook:          username
-  twitter:           username
+  twitter:           CaroByoute
   google_plus:       username
-  linkedin:          username
+  linkedin:          carolinebeyne
   dribbble:          username
   pinterest:         username
   kiva:              username
