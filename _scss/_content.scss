@@ -235,7 +235,7 @@
 .socialAccountList {
   @include clearfix();
   list-style: none;
-  margin: $leading auto;
+  margin: auto;
   padding-left: 0;
   width: 50%;
 }
