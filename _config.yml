@@ -14,9 +14,9 @@ name:				         Byoute.io
 title:               Byoute ++
 tagline:             'tagline'
 description:         Byoute's pieces of code
-url:                 http://by0ute.github.io/
+url:                 http://by0ute.github.io
 rss:                 rss feed url
-# baseurl:             ''
+baseurl:             '/'
 baseurl_posts_img:   '/assets/images/posts/'
 baseurl_featured_img: '/assets/images/hero/'
 baseurl_featured_thumbnail: '/assets/images/thumbnail/'
