@@ -4,7 +4,7 @@
   {% include head.html %}
 
   <body>
-    {% if page.url != '/index.html' %}
+    {% if page.url != site.baseurl %}
       <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
       {% include sidebar-nav.html %}
       {% include menu.html %}
@@ -12,15 +12,13 @@
 
     {{ content }}
 
-    {% if page.url != '/index.html' %}
+    {% if page.url != site.baseurl %}
       {% include sidebar-toggle.html %}
     {% endif %}
 
     {% if page.url == site.baseurl %}
       {% include subscribe.html %}
       {% include footer.html %}
-    {% else %}
-    <title>YEEEEEEEEEAH  {{ page.url }}</title>
     {% endif %}
 
     {% include footer-scripts.html %}
