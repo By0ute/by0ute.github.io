@@ -526,6 +526,8 @@ body {
   padding: 0;
   text-indent: -100em;
   overflow: hidden;
+  font-family: 'Amatic+SC', serif;
+  font-size: 48px;
 }
 
 .textLogo--white {
@@ -553,7 +555,8 @@ body {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  z-index: 500;
+  /*z-index: 500;*/
+  /*z-index: -1;*/
   margin: 0;
   width: 276px;
   height: 50px;
@@ -1629,6 +1632,11 @@ body {
   padding: 10px 15px;
 }
 
+.section--bg {
+    background-image: url(../images/backgrounds/dots.png);
+    background-repeat: repeat;
+}
+
 .section--first {
   width: 100%;
   top: 0;
@@ -1881,7 +1889,6 @@ body {
 
 .section--postsWrapper {
   width: 100%;
-  background: #f2f2f2;
   padding-top: 0;
   position: relative;
   clear: both;
@@ -2088,7 +2095,7 @@ body {
 
 .section--footer {
   width: 100%;
-  background: #fff;
+  background: #f6f6f6;
   padding: 1.5rem 0 3rem;
   position: relative;
   z-index: 400;
