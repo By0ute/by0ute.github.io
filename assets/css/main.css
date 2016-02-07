@@ -2291,7 +2291,7 @@ body {
   position: absolute;
   top: 0;
   display: block;
-  background-image: url(../images/heart.svg);
+  background-image: url(../images/icons/heart.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 60%;
