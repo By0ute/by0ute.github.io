@@ -22,11 +22,11 @@ baseurl_featured_img: '/assets/images/hero/'
 baseurl_featured_thumbnail: '/assets/images/thumbnail/'
 baseurl_javascripts: '/assets/javascripts/'
 icon:                /assets/images/pixellou.jpg # /assets/img/icon.png [best 300px X 300px]
-disqus:              disqus_shortname # get it on https://disqus.com/admin/
+disqus:              byouteio # get it on https://disqus.com/admin/
 
 author:
   name:              Byoute
-  url:               http://byoute.io
+  url:               http://by0ute.github.io/about
   facebook:          username
   twitter:           CaroByoute
   google_plus:       username
