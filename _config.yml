@@ -21,19 +21,19 @@ baseurl_posts_img:   '/assets/images/posts/'
 baseurl_featured_img: '/assets/images/hero/'
 baseurl_featured_thumbnail: '/assets/images/thumbnail/'
 baseurl_javascripts: '/assets/javascripts/'
-icon:                /assets/images/pixellou.jpg # /assets/img/icon.png [best 300px X 300px]
+icon:                /assets/images/icons/pixellou.jpg # /assets/img/icon.png [best 300px X 300px]
 disqus:              byouteio # get it on https://disqus.com/admin/
 
 author:
   name:              Byoute
   url:               http://by0ute.github.io/about
-  facebook:          username
+  # facebook:          username
   twitter:           CaroByoute
-  google_plus:       username
+  # google_plus:       username
   linkedin:          carolinebeyne
-  dribbble:          username
-  pinterest:         username
-  kiva:              username
+  # dribbble:          username
+  # pinterest:         username
+  # kiva:              username
 
 fb_admins:           your facebook profile id
 fb_appid:            your facebook app id

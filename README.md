@@ -3,7 +3,7 @@
 ## Software developer + VFX TD life
 Pieces of code
 
-![Byoute<3Pixellou](/assets/images/pixellou.jpg)
+![Byoute<3Pixellou](/assets/images/icons/pixellou.jpg)
 
 
 ## Website
