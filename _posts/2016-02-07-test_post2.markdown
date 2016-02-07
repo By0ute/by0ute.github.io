@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "Test Post 2!"
+date:   2016-02-07 19:21:00
+last_modified_at:  2016-02-07 19:21:00
+excerpt: "Test 2!"
+categories: test
+tags:  testtest
+image:
+  feature: pixellou.jpg
+  topPosition: 0px
+bgContrast: dark
+bgGradientOpacity: darker
+syntaxHighlighter: no
+---
+TEST2
+
+#### Test2
+
+#### TEEEEEST2
