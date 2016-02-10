@@ -7,7 +7,7 @@ excerpt: "I recently needed to recompile the Alembic library and its Python vers
 categories: fix
 tags:  alembic, c++, python, pyalembic, ilmbase, pyilmbase, fedora
 image:
-  feature: *.jpg
+  feature: pixellou.jpg
   topPosition: 0px
 bgContrast: dark
 bgGradientOpacity: darker
