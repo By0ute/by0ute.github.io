@@ -92,7 +92,7 @@ So I tried like on this post: [Python Bindings - unit test meshOut method fails]
 
 Yeah, the problem definitely starts from the imath module. 
 
-### ***What did I do wrong?***
+#### ***What did I do wrong?***
 
 After investigation, my problems were:
 
@@ -101,7 +101,7 @@ Wrong Boost Python version
 *I was compiling using Boost (Python) 1.55.* 
 While the recommanded compatible versions are Boost 1.48 - 1.52 (*see Ryan Galloway's sayings on [Abc.ChildIterator Error: This class cannot be instantiated from Python](https://groups.google.com/d/msg/alembic-discussion/jLwgzpZRjus/VDmPb73KtyIJ)*). 
 
-### **I, then, used Boost 1.48**
+#### **I, then, used Boost 1.48**
 
 
 "_POSIX_C_SOURCE" and "_XOPEN_SOURCE" redefined
@@ -141,7 +141,7 @@ I also finally pay attention to some warning during the compilation time
 
 After Google suggested me this Stackoverflow thread: [g++ with python.h, how to compile](http://stackoverflow.com/questions/10056393/g-with-python-h-how-to-compile), 
 
-### **in every file from *Ilmbase* or *Alembic* having \<Python.h> or \<boost/python/\*>, *I put those headers on top.***
+#### **in every file from *Ilmbase* or *Alembic* having \<Python.h> or \<boost/python/\*>, *I put those headers on top.***
 
 After these 2 things, I managed to compile everything smoothly and ran abcview without any issue. **And the alembic module, in python, imports the imath automatically as expected!**
 
