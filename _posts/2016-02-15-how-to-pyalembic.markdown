@@ -17,34 +17,54 @@ syntaxHighlighter: no
 How I finally overcome PyAlembic
 ===================
 
-[TOC]
-
 Due to some changes at work, I had to recompile Alembic and had problems on the python bindings for PyAlembic.
 I used to version that was on the master branch ([commit](https://github.com/alembic/alembic/commit/3682461d016b188f83e4639d08ffd784e85b3af9)), because a lot of things were fixed since the last release ([1.5.8](https://github.com/alembic/alembic/releases/tag/1.5.8)).
 
 Arrived at the PyAlembic step, everything *seemed* to compile and link correctly. 
 
 And then, when I ran abcview
+
 > \> ./abcview
+
+---
+
 > \> Traceback (most recent call last):
->  File "/home/alembic/python/examples/AbcView/bin/abcview", line 84, in < module >
-> ...verbose=args.verbose
->  File "/home/alembic/python/examples/AbcView/lib/abcview/app.py", line 1432, in create_app
-> ...win = AbcView()
->  File "/home/alembic/python/examples/AbcView/lib/abcview/app.py", line 432, in \__init__
-> ...self.viewer = GLWidget(self)
->  File "/home/alembic/python/examples/AbcView/lib/abcview/widget/viewer_widget.py", line 532, in \__init__
-> ...self.setup_default_camera()
->  File "/home/alembic/python/examples/AbcView/lib/abcview/widget/viewer_widget.py", line 545, in setup_default_camera
-> ...self.add_camera(GLCamera(self, name="interactive"))
->  File "/home/alembic/python/examples/AbcView/lib/abcview/widget/viewer_widget.py", line 590, in add_camera
-> ...camera.add_view(self)
->  File "/home/alembic/python/examples/AbcView/lib/abcview/gl.py", line 348, in add_view
-> ...self.views[viewer].setTranslation(self._translation)
->  **ArgumentError: Python argument types in**
-> ...***GLCamera.setTranslation(AbcGLCamera, V3d)***
+> 
+> File "/home/alembic/python/examples/AbcView/bin/abcview", line 84, in < module >
+>  
+> .......verbose=args.verbose
+> 
+> File "/home/alembic/python/examples/AbcView/lib/abcview/app.py", line 1432, in create_app
+>
+> .......win = AbcView()
+> 
+> File "/home/alembic/python/examples/AbcView/lib/abcview/app.py", line 432, in \_\_init\_\_
+>  
+> .......self.viewer = GLWidget(self)
+> 
+> File "/home/alembic/python/examples/AbcView/lib/abcview/widget/viewer_widget.py", line 532, in \_\_init\_\_
+>  
+> .......self.setup_default_camera()
+> 
+> File "/home/alembic/python/examples/AbcView/lib/abcview/widget/viewer_widget.py", line 545, in setup_default_camera
+>  
+> .......self.add_camera(GLCamera(self, name="interactive"))
+> 
+> File "/home/alembic/python/examples/AbcView/lib/abcview/widget/viewer_widget.py", line 590, in add_camera
+>  
+> .......camera.add_view(self)
+> 
+> File "/home/alembic/python/examples/AbcView/lib/abcview/gl.py", line 348, in add_view
+>  
+> .......self.views[viewer].setTranslation(self._translation)
+> 
+> **ArgumentError: Python argument types in**
+>  
+> .......***GLCamera.setTranslation(AbcGLCamera, V3d)***
+> 
 > **did not match C++ signature:**
-> ...***setTranslation(AbcOpenGL::v1::GLCamera {lvalue}, Imath::Vec3< double > trans)***
+> 
+> .......***setTranslation(AbcOpenGL::v1::GLCamera {lvalue}, Imath::Vec3< double > trans)***
 
 Like this post: [Problem Running AbcView](https://groups.google.com/forum/#!topic/alembic-discussion/A5QkgC0iKrc) on the Alembic forum. The problem appeared to be **the auto import imath from the alembic module that was not working**. 
 
