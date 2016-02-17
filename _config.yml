@@ -21,30 +21,28 @@ port: 9001
 # Details for the RSS feed generator
 name: By0ute
 title: ++ By0ute.io ++ 
-description: "Software Developer, TD life and post-prod coding..."
+description: "Software dev + TD life + post-prod code"
 meta_description: "Software Developer, TD, Technical Director, Post production code"
 meta_keywords: "site, website, code, c++, python, mel, td, post prod, cg, studio"
 url: http://by0ute.github.com
 production_url: http://by0ute.github.com
 repo: https://github.com/By0ute/by0ute.github.io
-disqus_shortname: "byouteio"
+disqus_shortname: byouteio
 rss_path: source/
 author:
   name      : Caroline Beyne
   image     : /assets/images/pixellou.jpg
   email     : caroline.beyne@gmail.com
   url       : http://carolinebeyne.com
-  # facebook  : http://facebook.com/fernando.dev
   twitter   : http://twitter.com/CaroByoute
-  # instagram : http://instagram.com/nandomoreira.me
   github    : http://github.com/By0ute
   linkedin  : http://linkedin.com/in/carolinebeyne
   bio       : "Software developer officiating as TD in a post prod studio"
 
 # thought
-thought:
-  text: I have no special talent. I am only passionately curious.
-  author: Albert Einstein
+# thought:
+#   text: I have no special talent. I am only passionately curious.
+#   author: Albert Einstein
 
 # Plugin: jekyll-assets
 assets:
