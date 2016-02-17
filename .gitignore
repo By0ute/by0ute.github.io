@@ -4,6 +4,7 @@ _site
 .jekyll-assets-cache
 .ruby-version
 .sass-cache
+.asset-cache
 
 # Numerous always-ignore extensions
 *.diff
@@ -17,6 +18,7 @@ _site
 *.zip
 *.vi
 *~
+*.cache
 
 # OS or Editor folders
 .DS_Store
