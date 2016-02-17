@@ -1,6 +1,20 @@
+- slug: alembic
+  name: Alembic
 
-- slug: welcome
-  name: Welcome
+- slug: c++
+  name: C++
 
-- slug: hello-world
-  name: Hello World
+- slug: python
+  name: Python
+
+- slug: pyalembic
+  name: PyAlembic
+
+- slug: ilmbase
+  name: Ilmbase
+
+- slug: pyilmbase
+  name: PyIlmbase
+
+- slug: fedora
+  name: Fedora
