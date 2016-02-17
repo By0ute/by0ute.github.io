@@ -1,12 +1,12 @@
 {% assign page_title = '' %}
 
-{% if page.title == "Home" %}{% capture page_title %}{{ site.name }} | {{ site.description }}{%if paginator and paginator.page != 1 %} - Página {{ paginator.page }}{% endif %}{% endcapture %}{% else %}{% capture page_title %}{%if page.slug == 'category' %}Categoria: {% endif %}{%if page.slug == 'tag' %}Tag: {% endif %} {{ page.title }} | {{ site.name }}{% endcapture %}{% endif %}
+{% if page.title == "Home" %}{% capture page_title %}{{ site.name }} | {{ site.description }}{%if paginator and paginator.page != 1 %} - Page {{ paginator.page }}{% endif %}{% endcapture %}{% else %}{% capture page_title %}{%if page.slug == 'category' %}Category: {% endif %}{%if page.slug == 'tag' %}Tag: {% endif %} {{ page.title }} | {{ site.name }}{% endcapture %}{% endif %}
 
 {% capture page_title %}{{ page_title | strip | rstrip | lstrip | escape | strip_newlines }}{% endcapture %}
 
 {% assign page_description = '' %}
 
-{% capture page_description %}{% if page.description %}{{ page.description | strip_html | strip | rstrip | strip_newlines | truncate: 160 }}{% else %}{{ site.meta_description }}{% endif %}{%if paginator and paginator.page != 1 %} - Página {{ paginator.page }} {% endif %}{%if page.slug == 'category' %} Categoria: {{ page.title }}{% endif %}{%if page.slug == 'tag' %} Tag: {{ page.title }}{% endif %}{% endcapture %}
+{% capture page_description %}{% if page.description %}{{ page.description | strip_html | strip | rstrip | strip_newlines | truncate: 160 }}{% else %}{{ site.meta_description }}{% endif %}{%if paginator and paginator.page != 1 %} - Page {{ paginator.page }} {% endif %}{%if page.slug == 'category' %} Category: {{ page.title }}{% endif %}{%if page.slug == 'tag' %} Tag: {{ page.title }}{% endif %}{% endcapture %}
 
 {% capture page_description %}{{ page_description | strip | rstrip | lstrip | escape | strip_newlines }}{% endcapture %}
 
@@ -26,7 +26,7 @@
 
 <title>{{ page_title }}</title>
 
-<meta name="google-site-verification" content="zS1dSn20XtA4FJYEOQLXqI0boxZdMnJ2g3beje-cl20">
+<!-- <meta name="google-site-verification" content="zS1dSn20XtA4FJYEOQLXqI0boxZdMnJ2g3beje-cl20"> -->
 <meta name="description" content="{{ page_description }}">
 <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.meta_keywords }}{% endif %}">
 
@@ -42,7 +42,7 @@
 
 <!-- Social: Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@nandomoreirame">
+<meta name="twitter:site" content="@CaroByoute">
 <meta name="twitter:domain" content="{{ site.url }}">
 <meta name="twitter:title" content="{{ page_title }}">
 <meta name="twitter:description" content="{{ page_description }}">
