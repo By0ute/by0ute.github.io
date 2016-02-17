@@ -1,11 +1,12 @@
 {
-  "name": "nandomoreira.me",
+  "name": "by0ute.github.com",
   "version": "1.0.0",
-  "homepage": "https://github.com/nandomoreirame/nandomoreirame.github.io",
+  "homepage": "https://github.com/By0ute/by0ute.github.io",
   "private": true,
   "license": "MIT",
   "authors": [
     "Fernando Moreira <nandomoreira.me@gmail.com>"
+    "Caroline Beyne <caroline.beyne@gmail.com>"
   ],
   "dependencies": {
     "classie": "~1.0.1",

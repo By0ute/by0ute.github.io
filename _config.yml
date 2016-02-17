@@ -3,7 +3,7 @@ markdown    : kramdown
 highlighter : rouge
 
 gems: [jekyll-paginate]
-paginate: 2 #6
+paginate: 4 #6
 comments: true
 paginate_path: "/page/:num"
 
