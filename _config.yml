@@ -7,9 +7,9 @@ paginate: 2 #6
 comments: true
 paginate_path: "/page/:num"
 
-baseurl: "/nandomoreira-jekyll-theme" # change to empty string ""
-domain_name: nandomoreira.me
-google_analytics: UA-52446115-1
+baseurl: "" # change to empty string ""
+domain_name: by0ute.github.com
+# google_analytics: UA-52446115-1
 
 source:      source
 destination: _site
@@ -19,27 +19,27 @@ port: 9001
 
 # site title, description, meta_description, meta_keywords
 # Details for the RSS feed generator
-name: Fernando Moreira
-title: Fernando Moreira | Desenvolvimento Web e tudo mais..
-description: "Desenvolvedor Front-end/Wordpress, Design Responsivo, HTML5, CSS3 e JavaScript"
-meta_description: "Desenvolvedor Front-end/Wordpress, Design Responsivo, HTML5, CSS3 e JavaScript"
-meta_keywords: "site, website, loja virtual, lojas virtuais, e-commerce, wordpress, frontend, front-end, html5, css3, javascript, jquery, seo, otimizacao, performance"
-url: http://nandomoreira.me
-production_url: http://nandomoreira.me
-repo: https://github.com/nandomoreirame/nandomoreira-jekyll-theme
-disqus_shortname: "fernandomoreira"
+name: By0ute
+title: ++ By0ute.io ++ 
+description: "Software Developer, TD life and post-prod coding..."
+meta_description: "Software Developer, TD, Technical Director, Post production code"
+meta_keywords: "site, website, code, c++, python, mel, td, post prod, cg, studio"
+url: http://by0ute.github.com
+production_url: http://by0ute.github.com
+repo: https://github.com/By0ute/by0ute.github.io
+disqus_shortname: "byouteio"
 rss_path: source/
 author:
-  name      : Fernando Moreira
+  name      : Caroline Beyne
   image     : /assets/images/author.jpg
-  email     : nandomoreira.me@gmail.com
-  url       : http://nandomoreira.me
-  facebook  : http://facebook.com/fernando.dev
-  twitter   : http://twitter.com/nandomoreirame
-  instagram : http://instagram.com/nandomoreira.me
-  github    : http://github.com/nandomoreirame
-  linkedin  : http://linkedin.com/in/nandomoreirame
-  bio       : "Desenvolvedor Front-end/Wordpress entusiasta de performance, design responsivo e usabilidade, sempre em busca do melhor projeto e de um bom café."
+  email     : caroline.beyne@gmail.com
+  url       : http://carolinebeyne.com
+  # facebook  : http://facebook.com/fernando.dev
+  twitter   : http://twitter.com/CaroByoute
+  # instagram : http://instagram.com/nandomoreira.me
+  github    : http://github.com/By0ute
+  linkedin  : http://linkedin.com/in/carolinebeyne
+  bio       : "Software developer officiating as TD in a post prod studio"
 
 # thought
 thought:
@@ -49,7 +49,7 @@ thought:
 # Plugin: jekyll-assets
 assets:
   dirname: /assets
-  baseurl: /nandomoreira-jekyll-theme/assets/ # change to /assets/
+  baseurl: /assets/ # change to /assets/
   sources:
     - assets/images
     - assets/fonts
