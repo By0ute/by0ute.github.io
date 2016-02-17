@@ -9,5 +9,5 @@ group :development do
   gem 'jekyll', '~> 2.5.3'
   gem 'jekyll-assets'
   gem 'jekyll-paginate'
-  gem 'pygments.rb'
+  # gem 'pygments.rb'
 end
