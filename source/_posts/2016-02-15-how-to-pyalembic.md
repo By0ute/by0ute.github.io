@@ -83,7 +83,7 @@ I tried the trick from the post to import imath and alembic without any error:
 >> import alembic
 {% endhighlight %}
 
-Here, Lucas Miller suggests to *always* **manually** import imath before the alembic module : [Python AttributeError when importing alembic](https://github.com/royedwards/alembic/issues/335)
+Here, Lucas Miller suggested to *always* **manually** import imath before the alembic module : [Python AttributeError when importing alembic](https://github.com/royedwards/alembic/issues/335)
 
 > *They are importing imath first.*
 
@@ -154,11 +154,15 @@ I also finally pay attention to some warning during the compilation time
 > ^
 {% endhighlight %}
 
+And I got the **exact same warning** when ***compiling pyilmbase***...
+
+---
+
 After Google suggested me this Stackoverflow thread: [g++ with python.h, how to compile](http://stackoverflow.com/questions/10056393/g-with-python-h-how-to-compile), 
 
 #### **in every file from *Ilmbase* or *Alembic* having \<Python.h> or \<boost/python/\*>, *I put those headers on top.***
 
-After these 2 things, I managed to compile everything smoothly and ran abcview without any issue :thumbsup:. **And the alembic module, in python, imports the imath automatically as expected!** :bowtie:
+After these 2 things, I managed to compile everything smoothly (ilmbase + alembic) and ran abcview without any issue :thumbsup:. **And the alembic module, in python, imports the imath automatically as expected!** :bowtie:
 
 ---
 
