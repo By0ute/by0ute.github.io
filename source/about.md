@@ -1,13 +1,16 @@
 ---
 layout: page
 title: About
-description: "This is a Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com"
+description: "Who is Byoute?"
 permalink: /about/
 slug: about
 ---
 
-This is a Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Hi, my name is **Byoute**. I am a *software developer*, working as **TD** in the *VFX department* of my studio. I'll be sharing some *piece of code* or any information related to the **CG industry**. 
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Besides coding, I like chocolate :cookie:, movies :clapper:, theater :dancer:, reading :book: and cooking :fork_and_knife:. And I love my grumpy life partner :couplekiss:, my fluffy kitten :heart_eyes_cat: and travelling around the World :airplane:. Also, I am a [Siggraph](http://www.siggraph.org/) addict.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+So feel free to comment my articles (*with good reasons, not for the love of spamming please!*) and I hope you'll my tiny place on the internet.
+
+Cheers! 
+Byoute :princess:

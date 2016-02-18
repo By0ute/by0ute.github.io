@@ -1,63 +1,16 @@
-# nandomoreira.me jekyll theme
+# Byoute.io
 
-### [Preview](http://nandomoreira.me/nandomoreira-jekyll-theme/)
+## Software developer + VFX TD life
+Pieces of code
 
-## Setup
+![Byoute<3Pixellou](/assets/images/pixellou.jpg)
 
-### In the terminal run the commands
 
-```
-$ sudo npm i -g gulp bower browser-sync
-$ sudo gem install bundler
-$ bundle install
-$ npm install
-```
-
-## Using Rake tasks
-
-```
-$ rake post title="TITLE OF THE POST"
-$ rake page name="about.md"
-$ rake category title="Programing"
-$ rake tag title="Jekyll"
-```
-
-## Using Jekyll
-
-### Running the server:
-
-```
-$ jekyll server
-```
-
-Access, [localhost:4000](http://localhost:4000/)
-
-## Using Gulp
-
-### Rum gulp
-
-```
-$ gulp
-```
-
----
-
-## Deploy in Github pages in 2 steps
-
-1. Change the variables `GITHUB_REPONAME` and `GITHUB_REPO_BRANCH` in `Rakefile`
-2. Run `rake` or `rake publish` for build and publish on Github
-
----
-
-* [Jekyll](http://jekyllrb.com/);
-* [Jekyll Documentation](http://jekyllrb.com/docs/home/);
-* [Como definir URLs curtas no Jekyll](http://nandomoreira.me/urls-curtas-no-jekyll/);
-* [Adicionando Disqus ao seu projeto Jekyll](http://nandomoreira.me/adicionando-disqus-ao-seu-projeto-jekyll/);
-
----
+## Website
+This website runs thanks to [Jekyll](http://jekyllrb.com/), with the theme [nandomoreira.me](http://nandomoreira.me/nandomoreira-jekyll-theme/)
 
 ### Copyright and license
 
 It is under [the MIT license](/LICENSE).
 
-Enjoy! :yum:
+Enjoy! :smile_cat:
