@@ -108,7 +108,7 @@ Yeah, the problem definitely starts from the imath module.
 
 ---
 
-After investigation, my problems were:
+After investigation <i class="fa fa-search"></i>, my problems were:
 
 Wrong Boost Python version
 --------------------------
@@ -162,7 +162,7 @@ After Google suggested me this Stackoverflow thread: [g++ with python.h, how to 
 
 #### **in every file from *Ilmbase* or *Alembic* having \<Python.h> or \<boost/python/\*>, *I put those headers on top.***
 
-After these 2 things, I managed to compile everything smoothly (ilmbase + alembic) and ran abcview without any issue :thumbsup:. **And the alembic module, in python, imports the imath automatically as expected!** :bowtie:
+After these 2 things, I managed to compile everything smoothly (ilmbase + alembic) and ran abcview without any issue <i class="fa fa-angellist"></i>. **And the alembic module, in python, imports the imath automatically as expected!** <i class="fa fa-child"></i>
 
 ---
 

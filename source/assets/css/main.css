@@ -1858,6 +1858,18 @@ html.swipebox-html.swipebox-touch {
 .fa-heart:before {
   content: ""; }
 
+.fa-tags:before {
+  content: ""; }
+
+.fa-book:before {
+  content: ""; }
+
+.fa-video-camera:before {
+  content: ""; }
+
+.fa-plane:before {
+  content: ""; }
+
 .fa-calendar:before {
   content: ""; }
 
@@ -1879,6 +1891,9 @@ html.swipebox-html.swipebox-touch {
 .fa-comments:before {
   content: ""; }
 
+.fa-heart-o:before {
+  content: ""; }
+
 .fa-linkedin-square:before {
   content: ""; }
 
@@ -1896,6 +1911,9 @@ html.swipebox-html.swipebox-touch {
 .fa-rss:before {
   content: ""; }
 
+.fa-globe:before {
+  content: ""; }
+
 .fa-google-plus-square:before {
   content: ""; }
 
@@ -1908,14 +1926,38 @@ html.swipebox-html.swipebox-touch {
 .fa-linkedin:before {
   content: ""; }
 
+.fa-cutlery:before {
+  content: ""; }
+
+.fa-desktop:before {
+  content: ""; }
+
 .fa-folder-o:before {
   content: ""; }
 
 .fa-folder-open-o:before {
   content: ""; }
 
+.fa-smile-o:before {
+  content: ""; }
+
+.fa-code:before {
+  content: ""; }
+
 .fa-calendar-o:before {
   content: ""; }
 
 .fa-instagram:before {
   content: ""; }
+
+.fa-child:before {
+  content: ""; }
+
+.fa-paw:before {
+  content: ""; }
+
+.fa-angellist:before {
+  content: ""; }
+
+.fa-hand-peace-o:before {
+  content: ""; }

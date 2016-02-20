@@ -46,8 +46,8 @@
 // .#{$fa-css-prefix}-qrcode:before { content: $fa-var-qrcode; }
 // .#{$fa-css-prefix}-barcode:before { content: $fa-var-barcode; }
 // .#{$fa-css-prefix}-tag:before { content: $fa-var-tag; }
-// .#{$fa-css-prefix}-tags:before { content: $fa-var-tags; }
-// .#{$fa-css-prefix}-book:before { content: $fa-var-book; }
+.#{$fa-css-prefix}-tags:before { content: $fa-var-tags; }
+.#{$fa-css-prefix}-book:before { content: $fa-var-book; }
 // .#{$fa-css-prefix}-bookmark:before { content: $fa-var-bookmark; }
 // .#{$fa-css-prefix}-print:before { content: $fa-var-print; }
 // .#{$fa-css-prefix}-camera:before { content: $fa-var-camera; }
@@ -64,7 +64,7 @@
 // .#{$fa-css-prefix}-dedent:before,
 // .#{$fa-css-prefix}-outdent:before { content: $fa-var-outdent; }
 // .#{$fa-css-prefix}-indent:before { content: $fa-var-indent; }
-// .#{$fa-css-prefix}-video-camera:before { content: $fa-var-video-camera; }
+.#{$fa-css-prefix}-video-camera:before { content: $fa-var-video-camera; }
 // .#{$fa-css-prefix}-photo:before,
 // .#{$fa-css-prefix}-image:before,
 // .#{$fa-css-prefix}-picture-o:before { content: $fa-var-picture-o; }
@@ -118,7 +118,7 @@
 // .#{$fa-css-prefix}-eye-slash:before { content: $fa-var-eye-slash; }
 // .#{$fa-css-prefix}-warning:before,
 // .#{$fa-css-prefix}-exclamation-triangle:before { content: $fa-var-exclamation-triangle; }
-// .#{$fa-css-prefix}-plane:before { content: $fa-var-plane; }
+.#{$fa-css-prefix}-plane:before { content: $fa-var-plane; }
 .#{$fa-css-prefix}-calendar:before { content: $fa-var-calendar; }
 // .#{$fa-css-prefix}-random:before { content: $fa-var-random; }
 .#{$fa-css-prefix}-comment:before { content: $fa-var-comment; }
@@ -143,7 +143,7 @@
 // .#{$fa-css-prefix}-thumbs-o-up:before { content: $fa-var-thumbs-o-up; }
 // .#{$fa-css-prefix}-thumbs-o-down:before { content: $fa-var-thumbs-o-down; }
 // .#{$fa-css-prefix}-star-half:before { content: $fa-var-star-half; }
-// .#{$fa-css-prefix}-heart-o:before { content: $fa-var-heart-o; }
+.#{$fa-css-prefix}-heart-o:before { content: $fa-var-heart-o; }
 // .#{$fa-css-prefix}-sign-out:before { content: $fa-var-sign-out; }
 .#{$fa-css-prefix}-linkedin-square:before { content: $fa-var-linkedin-square; }
 // .#{$fa-css-prefix}-thumb-tack:before { content: $fa-var-thumb-tack; }
@@ -177,7 +177,7 @@
 // .#{$fa-css-prefix}-arrow-circle-right:before { content: $fa-var-arrow-circle-right; }
 // .#{$fa-css-prefix}-arrow-circle-up:before { content: $fa-var-arrow-circle-up; }
 // .#{$fa-css-prefix}-arrow-circle-down:before { content: $fa-var-arrow-circle-down; }
-// .#{$fa-css-prefix}-globe:before { content: $fa-var-globe; }
+.#{$fa-css-prefix}-globe:before { content: $fa-var-globe; }
 // .#{$fa-css-prefix}-wrench:before { content: $fa-var-wrench; }
 // .#{$fa-css-prefix}-tasks:before { content: $fa-var-tasks; }
 // .#{$fa-css-prefix}-filter:before { content: $fa-var-filter; }
@@ -248,7 +248,7 @@
 // .#{$fa-css-prefix}-suitcase:before { content: $fa-var-suitcase; }
 // .#{$fa-css-prefix}-bell-o:before { content: $fa-var-bell-o; }
 // .#{$fa-css-prefix}-coffee:before { content: $fa-var-coffee; }
-// .#{$fa-css-prefix}-cutlery:before { content: $fa-var-cutlery; }
+.#{$fa-css-prefix}-cutlery:before { content: $fa-var-cutlery; }
 // .#{$fa-css-prefix}-file-text-o:before { content: $fa-var-file-text-o; }
 // .#{$fa-css-prefix}-building-o:before { content: $fa-var-building-o; }
 // .#{$fa-css-prefix}-hospital-o:before { content: $fa-var-hospital-o; }
@@ -266,7 +266,7 @@
 // .#{$fa-css-prefix}-angle-right:before { content: $fa-var-angle-right; }
 // .#{$fa-css-prefix}-angle-up:before { content: $fa-var-angle-up; }
 // .#{$fa-css-prefix}-angle-down:before { content: $fa-var-angle-down; }
-// .#{$fa-css-prefix}-desktop:before { content: $fa-var-desktop; }
+.#{$fa-css-prefix}-desktop:before { content: $fa-var-desktop; }
 // .#{$fa-css-prefix}-laptop:before { content: $fa-var-laptop; }
 // .#{$fa-css-prefix}-tablet:before { content: $fa-var-tablet; }
 // .#{$fa-css-prefix}-mobile-phone:before,
@@ -281,7 +281,7 @@
 // .#{$fa-css-prefix}-github-alt:before { content: $fa-var-github-alt; }
 .#{$fa-css-prefix}-folder-o:before { content: $fa-var-folder-o; }
 .#{$fa-css-prefix}-folder-open-o:before { content: $fa-var-folder-open-o; }
-// .#{$fa-css-prefix}-smile-o:before { content: $fa-var-smile-o; }
+.#{$fa-css-prefix}-smile-o:before { content: $fa-var-smile-o; }
 // .#{$fa-css-prefix}-frown-o:before { content: $fa-var-frown-o; }
 // .#{$fa-css-prefix}-meh-o:before { content: $fa-var-meh-o; }
 // .#{$fa-css-prefix}-gamepad:before { content: $fa-var-gamepad; }
@@ -289,7 +289,7 @@
 // .#{$fa-css-prefix}-flag-o:before { content: $fa-var-flag-o; }
 // .#{$fa-css-prefix}-flag-checkered:before { content: $fa-var-flag-checkered; }
 // .#{$fa-css-prefix}-terminal:before { content: $fa-var-terminal; }
-// .#{$fa-css-prefix}-code:before { content: $fa-var-code; }
+.#{$fa-css-prefix}-code:before { content: $fa-var-code; }
 // .#{$fa-css-prefix}-mail-reply-all:before,
 // .#{$fa-css-prefix}-reply-all:before { content: $fa-var-reply-all; }
 // .#{$fa-css-prefix}-star-half-empty:before,
@@ -445,8 +445,8 @@
 // .#{$fa-css-prefix}-language:before { content: $fa-var-language; }
 // .#{$fa-css-prefix}-fax:before { content: $fa-var-fax; }
 // .#{$fa-css-prefix}-building:before { content: $fa-var-building; }
-// .#{$fa-css-prefix}-child:before { content: $fa-var-child; }
-// .#{$fa-css-prefix}-paw:before { content: $fa-var-paw; }
+.#{$fa-css-prefix}-child:before { content: $fa-var-child; }
+.#{$fa-css-prefix}-paw:before { content: $fa-var-paw; }
 // .#{$fa-css-prefix}-spoon:before { content: $fa-var-spoon; }
 // .#{$fa-css-prefix}-cube:before { content: $fa-var-cube; }
 // .#{$fa-css-prefix}-cubes:before { content: $fa-var-cubes; }
@@ -549,7 +549,7 @@
 // .#{$fa-css-prefix}-bicycle:before { content: $fa-var-bicycle; }
 // .#{$fa-css-prefix}-bus:before { content: $fa-var-bus; }
 // .#{$fa-css-prefix}-ioxhost:before { content: $fa-var-ioxhost; }
-// .#{$fa-css-prefix}-angellist:before { content: $fa-var-angellist; }
+.#{$fa-css-prefix}-angellist:before { content: $fa-var-angellist; }
 // .#{$fa-css-prefix}-cc:before { content: $fa-var-cc; }
 // .#{$fa-css-prefix}-shekel:before,
 // .#{$fa-css-prefix}-sheqel:before,
@@ -639,7 +639,7 @@
 // .#{$fa-css-prefix}-hand-lizard-o:before { content: $fa-var-hand-lizard-o; }
 // .#{$fa-css-prefix}-hand-spock-o:before { content: $fa-var-hand-spock-o; }
 // .#{$fa-css-prefix}-hand-pointer-o:before { content: $fa-var-hand-pointer-o; }
-// .#{$fa-css-prefix}-hand-peace-o:before { content: $fa-var-hand-peace-o; }
+.#{$fa-css-prefix}-hand-peace-o:before { content: $fa-var-hand-peace-o; }
 // .#{$fa-css-prefix}-trademark:before { content: $fa-var-trademark; }
 // .#{$fa-css-prefix}-registered:before { content: $fa-var-registered; }
 // .#{$fa-css-prefix}-creative-commons:before { content: $fa-var-creative-commons; }
