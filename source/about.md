@@ -6,7 +6,7 @@ permalink: /about/
 slug: about
 ---
 
-Hi, my name is *Caroline Beyne* aka **Byoute**. I am a *software developer* <i class="fa fa-desktop"></i>, working as **TD** in the *VFX department* of my studio. I'll be sharing some *piece of code* <i class="fa fa-code"></i> or any information related to the **CG industry**. 
+Hi, my name is [*Caroline Beyne*](http://carolinebeyne.com) aka **Byoute**. I am a *software developer* <i class="fa fa-desktop"></i>, working as **TD** in the *VFX department* of my studio. I'll be sharing some *piece of code* <i class="fa fa-code"></i> or any information related to the **CG industry**. 
 
 Besides coding, I like chocolate <i class="fa fa-heart-o"></i>, movies <i class="fa fa-video-camera"></i>, theater <i class="fa fa-child"></i>, reading <i class="fa fa-book"></i> and cooking <i class="fa fa-cutlery"></i>. And I love my grumpy life partner <i class="fa fa-heart"></i>, my fluffy kitten <i class="fa fa-paw"></i> and travelling around the World <i class="fa fa-plane"></i>. Also, I am a [Siggraph](http://www.siggraph.org/) addict.
 
