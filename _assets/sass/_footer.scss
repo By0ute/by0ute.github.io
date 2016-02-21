@@ -20,7 +20,11 @@
 
   .icons {
     margin-bottom: 3em;
-    display: none;
+    display: inherit;
+
+    @include media($screen-phone) {
+      display: inline;
+    }
 
     @include media($screen-tablet) {
       display: inline-block;

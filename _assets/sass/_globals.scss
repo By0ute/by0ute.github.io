@@ -206,6 +206,10 @@ pre {
     right: auto;
   };
 
+  @include media($screen-phone) {
+    width: $container-phone-width;
+  }
+
   @include media($screen-tablet) {
     width: $container-tablet-width;
   }
