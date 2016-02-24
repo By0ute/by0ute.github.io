@@ -117,6 +117,9 @@ While the recommanded compatible versions are Boost 1.48 - 1.52 (*see Ryan Gallo
 
 #### **I, then, used Boost 1.48**
 
+### EDIT: 24-02-2016
+I retry with the last version of Boost available today ([1.60](http://www.boost.org/users/history/version_1_60_0.html)). **And it worked** <i class="fa fa-angellist"></i>. **So I think, the real problem is the POSIX issue**, *explained right below*. But in case you use a recent Boost and the POSIX fix but still have problems, try an old one.
+
 ---
 
 "_POSIX_C_SOURCE" and "_XOPEN_SOURCE" redefined
@@ -162,13 +165,13 @@ After Google suggested me this Stackoverflow thread: [g++ with python.h, how to 
 
 #### **in every file from *Ilmbase* or *Alembic* having \<Python.h> or \<boost/python/\*>, *I put those headers on top.***
 
-After these 2 things, I managed to compile everything smoothly (ilmbase + alembic) and ran abcview without any issue <i class="fa fa-angellist"></i>. **And the alembic module, in python, imports the imath automatically as expected!** <i class="fa fa-child"></i>
+After that, I managed to compile everything smoothly (ilmbase + alembic) and ran abcview without any issue <i class="fa fa-angellist"></i>. **And the alembic module, in python, imports the imath automatically as expected!** <i class="fa fa-child"></i>
 
 ---
 
 To sum up
 ---------
 
- 1. Be sure to **use a compatible Boost version** for the Alembic Python bindings : **1.48 - 1.52**
+ 1. Put **Python and Boost Python headers on top of all headers** in Ilmbase and Alembic files
 
- 2. Put **Python and Boost Python headers on top of all headers** in Ilmbase and Alembic files
+ 2. *(Be sure to **use a compatible Boost version** for the Alembic Python bindings : **1.48 - 1.52**)* in case just #1 does not work
