@@ -53,7 +53,7 @@ end
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
-  title = ENV["title"] || "Novo post"
+  title = ENV["title"] || "New post"
 
   tags = ""
   categories = ""
