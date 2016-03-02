@@ -18,3 +18,18 @@
 
 - slug: fedora
   name: Fedora
+
+- slug: collapsable
+  name: Collapsable
+
+- slug: framelayout
+  name: FrameLayout
+
+- slug: maya
+  name: Maya
+
+- slug: pyqt
+  name: PyQt
+
+- slug: widget
+  name: Widget
