@@ -1,8 +1,8 @@
 permalink   : /:title/
 markdown    : kramdown
-highlighter : rouge
+highlighter : pygments
 
-gems: [jekyll-paginate]
+# gems: [jekyll-paginate]
 paginate: 4 #6
 comments: true
 paginate_path: "/page/:num"
@@ -37,7 +37,7 @@ author:
   twitter   : http://twitter.com/CaroByoute
   github    : http://github.com/By0ute
   linkedin  : http://linkedin.com/in/carolinebeyne
-  bio       : "Software developer officiating as TD in a post prod studio"
+  bio       : "Software engineer officiating as a Pipeline TD in an animation studio"
 
 # thought
 # thought:
@@ -53,7 +53,7 @@ assets:
     - assets/fonts
     - assets/css
     - assets/js
-  # cache: true
+  cache: true
   gzip: [ text/css, application/javascript ]
 
 # Compress HTML
