@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+  <head>
+<meta charset="utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="alternate" href="http://byoute.io" hreflang="pt-BR">
+<link href="http://gmpg.org/xfn/11" rel="profile">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="theme-color" content="#A63B4D">
+<title> How to PyAlembic - Finally overcome Alembic Python bindings | By0ute</title>
+<!-- <meta name="google-site-verification" content="zS1dSn20XtA4FJYEOQLXqI0boxZdMnJ2g3beje-cl20"> -->
+<meta name="description" content="Software Developer, TD, Technical Director, Post production code">
+<meta name="keywords" content="site, website, code, c++, python, mel, td, post prod, cg, studio">
+<!-- Social: Facebook / Open Graph -->
+<meta property="og:url" content="http://byoute.io/how-to-pyalembic/">
+<meta property="og:title" content=" How to PyAlembic - Finally overcome Alembic Python bindings | By0ute">
+<meta property="og:description" content="Software Developer, TD, Technical Director, Post production code">
+<meta property="og:site_name" content="Byoute">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:type" content="website">
+<meta property="og:author" content="">
+<meta property="og:image" content="http://byoute.io">
+<!-- Social: Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@CaroByoute">
+<meta name="twitter:domain" content="http://byoute.io">
+<meta name="twitter:title" content=" How to PyAlembic - Finally overcome Alembic Python bindings | By0ute">
+<meta name="twitter:description" content="Software Developer, TD, Technical Director, Post production code">
+<meta name="twitter:image:src" content="http://byoute.io">
+<!-- Favicons -->
+<link rel="catpixel" sizes="114x114" href="http://byoute.io/assets/ico/catpixel-114-4981dfe20ebcc728904fcf47b6ff0c47.png">
+<link rel="catpixel" sizes="72x72" href="http://byoute.io/assets/ico/catpixel-72-82b9d4c0bbdb3e6089c2e7367a3e1235.png">
+<link rel="catpixel" href="http://byoute.io/assets/ico/catpixel-57-1197774950137b9bb7d2af3df1c10ee6.png">
+<link rel="shortcut icon" type="image/png" href="http://byoute.io/assets/ico/catpixel-favicon-62facffdb1ee80f135dd9e6bd4aaf3ad.png">
+<link rel="icon" type="image/png" href="http://byoute.io/assets/ico/catpixel-favicon-62facffdb1ee80f135dd9e6bd4aaf3ad.png" />
+<!-- rel prev and next -->
+<!-- Canonical link tag -->
+<link rel="canonical" href="http://byoute.io/how-to-pyalembic/">
+<link rel="alternate" type="application/rss+xml" title="By0ute" href="http://byoute.io/feed.xml">
+<link rel="stylesheet" href="/assets/main-4a6ac634e892acf02d07c49e8a6b0826.css">
+<script src="/assets/modernizr-custom-cb807611a3e262b2eac59444cbab74d6.js" data-cfasync="false"></script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Website",
+  "publisher": "by0ute.github.com",
+  "url": "http://by0ute.github.com/",
+  "description": "Software dev + TD life + post-prod code"
+}
+</script>
+<script type="text/javascript">
+  var disqus_shortname = 'byouteio',
+      baseurl          = '';
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', '']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+    <meta name="robots" content="noindex"> <!--=====  Please remove it ! ! !  ======-->
+    <meta name="googlebot" content="noindex"> <!--=====  Please remove it ! ! !  ======-->
+  </head>
+  <body class="post-template single">
+    <header class="header">
+  <div class="container">
+    <h1><a href="/"><strong>Byoute</strong>.io</a></h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="#!" data-modal="modalSearch"><i class="fa fa-search"></i></a></li>
+        <li><a href="/feed.xml" target="_blank"><i class="fa fa-feed"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <main class="wrapper container" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+      <article class="post" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+  <header class="post-header">
+    <h1>How to PyAlembic - Finally overcome Alembic Python bindings</h1>
+    <div class="post-meta">
+      <time datetime="2016-02-15">
+        <i class="fa fa-calendar-o"></i> <time datetime="2016-02-15"> 15-02-2016
+      </time>
+      <span>
+        <i class="fa fa-comments"></i> <a href="/how-to-pyalembic/#disqus_thread" data-disqus-identifier="/how-to-pyalembic">Leave a comment</a>
+      </span>
+      <span>
+        <i class="fa fa-folder-open-o"></i> <a href="/category/fix/">Fix</a>
+      </span>
+    </div>
+    <div class="post-meta">
+        <span>
+              <i class="fa fa-tags"></i>
+                  <a href="/tag/alembic/">Alembic</a>
+                    , 
+                  <a href="/tag/c++/">C++</a>
+                    , 
+                  <a href="/tag/python/">Python</a>
+                    , 
+                  <a href="/tag/pyalembic/">PyAlembic</a>
+                    , 
+                  <a href="/tag/ilmbase/">Ilmbase</a>
+                    , 
+                  <a href="/tag/pyilmbase/">PyIlmbase</a>
+                    , 
+                  <a href="/tag/fedora/">Fedora</a>
+      </span>
+    </div>
+  </header>
+  <p>Due to some changes at work, I had to recompile Alembic and had problems on the python bindings for PyAlembic.
+I used to version that was on the master branch (<a href="https://github.com/alembic/alembic/commit/3682461d016b188f83e4639d08ffd784e85b3af9">commit</a>), because a lot of things were fixed since the last release (<a href="https://github.com/alembic/alembic/releases/tag/1.5.8">1.5.8</a>).</p>
+<p>Arrived at the PyAlembic step, everything <em>seemed</em> to compile and link correctly.</p>
+<p>And then, when I ran abcview</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; ./abcview</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
+File <span class="s2">&quot;/home/alembic/python/examples/AbcView/bin/abcview&quot;</span>, line 84, in &lt;module&gt;
+      <span class="nv">verbose</span><span class="o">=</span>args.verbose
+File <span class="s2">&quot;/home/alembic/python/examples/AbcView/lib/abcview/app.py&quot;</span>, line 1432, in create_app
+      <span class="nv">win</span> <span class="o">=</span> AbcView<span class="o">()</span>
+File <span class="s2">&quot;/home/alembic/python/examples/AbcView/lib/abcview/app.py&quot;</span>, line 432, in __init__
+      self.viewer <span class="o">=</span> GLWidget<span class="o">(</span>self<span class="o">)</span>
+File <span class="s2">&quot;/home/alembic/python/examples/AbcView/lib/abcview/widget/viewer_widget.py&quot;</span>, line 532, in __init__
+      self.setup_default_camera<span class="o">()</span>
+File <span class="s2">&quot;/home/alembic/python/examples/AbcView/lib/abcview/widget/viewer_widget.py&quot;</span>, line 545, in setup_default_camera
+      self.add_camera<span class="o">(</span>GLCamera<span class="o">(</span>self, <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;interactive&quot;</span><span class="o">))</span>
+File <span class="s2">&quot;/home/alembic/python/examples/AbcView/lib/abcview/widget/viewer_widget.py&quot;</span>, line 590, in add_camera
+      camera.add_view<span class="o">(</span>self<span class="o">)</span>
+File <span class="s2">&quot;/home/alembic/python/examples/AbcView/lib/abcview/gl.py&quot;</span>, line 348, in add_view
+      self.views<span class="o">[</span>viewer<span class="o">]</span>.setTranslation<span class="o">(</span>self._translation<span class="o">)</span>
+ArgumentError: Python argument types in
+      GLCamera.setTranslation<span class="o">(</span>AbcGLCamera, V3d<span class="o">)</span>
+did not match C++ signature:
+      setTranslation<span class="o">(</span>AbcOpenGL::v1::GLCamera <span class="o">{</span>lvalue<span class="o">}</span>, Imath::Vec3&lt;double&gt; trans<span class="o">)</span></code></pre></div>
+<p>Like on this post: <a href="https://groups.google.com/forum/#!topic/alembic-discussion/A5QkgC0iKrc">Problem Running AbcView</a> on the Alembic forum. The problem appeared to be <strong>the auto import imath from the alembic module that was not working</strong>.</p>
+<p>I gave it a try and import alembic to see what would happen.</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; python</code></pre></div>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;</span> <span class="kn">import</span> <span class="nn">alembic</span>
+<span class="o">&gt;&gt;</span> <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+   <span class="n">File</span> <span class="s">&quot;&lt;stdin&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+   <span class="ne">AttributeError</span><span class="p">:</span> <span class="s">&#39;NoneType&#39;</span> <span class="nb">object</span> <span class="n">has</span> <span class="n">no</span> <span class="n">attribute</span> <span class="s">&#39;BaseExc&#39;</span></code></pre></div>
+<p>So, yeah there’s an error on the python alembic module. I came across this post <a href="https://groups.google.com/forum/#!topic/alembic-discussion/EUekCcYeEQQ">PyAlembic import quirk</a> and got every same error.
+Importing the imath module before the alembic seemed to work, while just the iex then alembic made an error.</p>
+<hr />
+<p>I tried the trick from the post to import imath and alembic without any error:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; python</code></pre></div>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;</span> <span class="kn">import</span> <span class="nn">DLFCN</span>
+<span class="o">&gt;&gt;</span> <span class="kn">import</span> <span class="nn">sys</span>
+<span class="o">&gt;&gt;</span> <span class="n">sys</span><span class="o">.</span><span class="n">setdlopenflags</span><span class="p">(</span><span class="n">DLFCN</span><span class="o">.</span><span class="n">RTLD_NOW</span> <span class="o">|</span> <span class="n">DLFCN</span><span class="o">.</span><span class="n">RTLD_GLOBAL</span><span class="p">)</span> 
+<span class="o">&gt;&gt;</span> <span class="kn">import</span> <span class="nn">imath</span>
+<span class="o">&gt;&gt;</span> <span class="kn">import</span> <span class="nn">alembic</span></code></pre></div>
+<p>Here, Lucas Miller suggested to <em>always</em> <strong>manually</strong> import imath before the alembic module : <a href="https://github.com/royedwards/alembic/issues/335">Python AttributeError when importing alembic</a></p>
+<blockquote>
+  <p><em>They are importing imath first.</em></p>
+</blockquote>
+<hr />
+<p>But I did not like this solution (which is not one). Plus, I remembered that I used to compile the alembic module that ran by itself without needing any of those tricks. So, my guess was that the problem started at pyilmbase with the imath module. I continued digging.</p>
+<p>So I tried like on this post: <a href="https://groups.google.com/d/msg/alembic-discussion/8wSs0L45md0/QfFPDfMyAwAJ">Python Bindings - unit test meshOut method fails</a> and got the same error.</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; python</code></pre></div>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;</span> <span class="kn">from</span> <span class="nn">imath</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="o">&gt;&gt;</span> <span class="ne">ImportError</span><span class="p">:</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">alembic</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libPyImath</span><span class="o">.</span><span class="n">so</span><span class="o">.</span><span class="mi">2</span><span class="p">:</span> <span class="n">undefined</span> <span class="n">symbol</span><span class="p">:</span> <span class="n">_ZNSo9_M_insertIdEERSoT_</span></code></pre></div>
+<p>Yeah, the problem definitely starts from the imath module.</p>
+<h4 id="what-did-i-do-wrong"><strong><em>What did I do wrong?</em></strong></h4>
+<hr />
+<p>After investigation <i class="fa fa-search"></i>, my problems were:</p>
+<h2 id="wrong-boost-python-version">Wrong Boost Python version</h2>
+<p><em>I was compiling using Boost (Python) 1.55.</em> 
+While the recommanded compatible versions are Boost 1.48 - 1.52 (<em>see Ryan Galloway’s sayings on <a href="https://groups.google.com/d/msg/alembic-discussion/jLwgzpZRjus/VDmPb73KtyIJ">Abc.ChildIterator Error: This class cannot be instantiated from Python</a></em>).</p>
+<h4 id="i-then-used-boost-148"><strong>I, then, used Boost 1.48</strong></h4>
+<h3 id="edit-24-02-2016">EDIT: 24-02-2016</h3>
+<p>I retry with the last version of Boost available today (<a href="http://www.boost.org/users/history/version_1_60_0.html">1.60</a>). <strong>And it worked</strong> <i class="fa fa-angellist"></i>. <strong>So I think, the real problem is the POSIX issue</strong>, <em>explained right below</em>. But in case you use a recent Boost and the POSIX fix but still have problems, try an old one.</p>
+<hr />
+<h2 id="posixcsource-and-xopensource-redefined">“_POSIX_C_SOURCE” and “_XOPEN_SOURCE” redefined</h2>
+<p>I also finally pay attention to some warning during the compilation time</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">&gt; In file included from /usr/include/python2.7/pyconfig.h:6:0,
+                   from /home/boost/1.48.0/include/boost/python/detail/wrap_python.hpp:50,
+                   from /home/boost/1.48.0/include/boost/python/detail/prefix.hpp:13,
+                   from /home/boost/1.48.0/include/boost/python/args.hpp:8,
+                   from /home/boost/1.48.0/include/boost/python.hpp:11,
+                   from /home/alembic/python/PyAlembic/Tests/main.cpp:3:
+&gt; /usr/include/python2.7/pyconfig-64.h:1182:0: warning: <span class="s2">&quot;_POSIX_C_SOURCE&quot;</span> redefined <span class="o">[</span>enabled by default<span class="o">]</span>
+&gt; <span class="c">#define _POSIX_C_SOURCE 200112L  </span>
+&gt; ^  
+&gt; In file included from /usr/include/string.h:25:0,
+                   from /home/alembic/python/PyAlembic/Tests/main.cpp:2:
+&gt; /usr/include/features.h:165:0: note: this is the location of the previous definition  
+&gt; <span class="c">#define _POSIX_C_SOURCE 200809L </span>
+&gt; ^
+&gt; In file included from /usr/include/python2.7/pyconfig.h:6:0,
+                   from /home/boost/1.48.0/include/boost/python/detail/wrap_python.hpp:50,
+                   from /home/boost/1.48.0/include/boost/python/detail/prefix.hpp:13,
+                   from /home/boost/1.48.0/include/boost/python/args.hpp:8,
+                   from /home/boost/1.48.0/include/boost/python.hpp:11,
+                   from /home/alembic/python/PyAlembic/Tests/main.cpp:3:
+&gt; /usr/include/python2.7/pyconfig-64.h:1204:0: warning: <span class="s2">&quot;_XOPEN_SOURCE&quot;</span> redefined <span class="o">[</span>enabled by default<span class="o">]</span>
+&gt; <span class="c">#define _XOPEN_SOURCE 600</span>
+&gt; ^
+&gt; In file included from /usr/include/string.h:25:0,
+                   from /home/alembic/python/PyAlembic/Tests/main.cpp:2:
+&gt; /usr/include/features.h:167:0: note: this is the location of the previous definition
+&gt; <span class="c">#define _XOPEN_SOURCE 700</span>
+&gt; ^</code></pre></div>
+<p>And I got the <strong>exact same warning</strong> when <strong><em>compiling pyilmbase</em></strong>…</p>
+<hr />
+<p>After Google suggested me this Stackoverflow thread: <a href="http://stackoverflow.com/questions/10056393/g-with-python-h-how-to-compile">g++ with python.h, how to compile</a>,</p>
+<h4 id="in-every-file-from-ilmbase-or-alembic-having-pythonh-or-boostpython-i-put-those-headers-on-top"><strong>in every file from <em>Ilmbase</em> or <em>Alembic</em> having &lt;Python.h&gt; or &lt;boost/python/*&gt;, <em>I put those headers on top.</em></strong></h4>
+<p>After that, I managed to compile everything smoothly (ilmbase + alembic) and ran abcview without any issue <i class="fa fa-angellist"></i>. <strong>And the alembic module, in python, imports the imath automatically as expected!</strong> <i class="fa fa-child"></i></p>
+<hr />
+<h2 id="to-sum-up">To sum up</h2>
+<ol>
+  <li>
+    <p>Put <strong>Python and Boost Python headers on top of all headers</strong> in Ilmbase and Alembic files</p>
+  </li>
+  <li>
+    <p><em>(Be sure to <strong>use a compatible Boost version</strong> for the Alembic Python bindings : <strong>1.48 - 1.52</strong>)</em> in case just #1 does not work</p>
+  </li>
+</ol>
+  <footer class="post-footer">
+    <section class="author">
+      <h4>Byoute</h4>
+      <p>Software engineer officiating as a Pipeline TD in an animation studio</p>
+    </section>
+<aside class="share">
+  <h4>Share this.</h4>
+  <a href="http://twitter.com/share?text=How to PyAlembic - Finally overcome Alembic Python bindings&amp;url=http://byoute.io/how-to-pyalembic/"
+  onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://byoute.io/how-to-pyalembic/"
+  onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+    <i class="fa fa-facebook-square"></i>
+  </a>
+</aside>
+      <hr>
+<aside id="comments" class="disqus">
+  <h3 class="txt-center"><i class="fa fa-comments"></i> Comments</h3>
+  <hr>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_identifier = '/how-to-pyalembic';
+    var disqus_title = 'How to PyAlembic - Finally overcome Alembic Python bindings';
+    var disqus_url = 'http://byoute.io/how-to-pyalembic/';
+    /*var disqus_developer = 1;*/
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>
+    Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+  </noscript>
+</aside>
+  </footer>
+</article>
+    </main>
+<footer class="footer">
+  <div class="container">
+    <ul class="icons">
+      <li>
+        <a href="http://github.com/By0ute" class="icon-github" target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:mail@byoute.io" class="icon-facebook" target="_blank">
+          <i class="fa fa-envelope"></i>
+        </a>
+      </li>
+      <li>
+        <a href="http://twitter.com/CaroByoute" class="icon-twitter" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="http://carolinebeyne.com" class="icon-instagram" target="_blank">
+          <i class="fa fa-globe"></i>
+        </a>
+      </li>
+      <li>
+        <a href="http://linkedin.com/in/carolinebeyne" class="icon-linkedin" target="_blank">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </li>
+    </ul>
+<!--     <p>
+      <q></q>
+      <small>– </small>
+    </p> -->
+    <small class="clearfix">
+      Made with <a href="http://jekyllrb.com" target="_blank">Jekyll</a> • <a href="https://github.com/By0ute/by0ute.github.io" target="_blank">Open source <i class="fa fa-heart"></i></a>
+    </small>
+  </div>
+</footer>
+<a class="scroll-up fa fa-chevron-up bounce" href="#" data-position="0"></a>
+<div id="modalSearch" class="modal">
+  <div class="modal__overlay"></div>
+  <div class="modal__content">
+    <a href="#!" class="modal-close" data-modal-close>&times;</a>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search in 2 articles">
+      <ul id="results-container"></ul>
+    </div>
+  </div>
+</div>
+    <script src="/assets/main-52d417e8a6ff9f5b168386d37c96338a.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>++ By0ute.io ++</title>
+    <description>Software dev + TD life + post-prod code</description>
+    <link>http://byoute.io/</link>
+    <atom:link href="http://byoute.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 27 Feb 2018 19:52:06 -0500</pubDate>
+    <lastBuildDate>Tue, 27 Feb 2018 19:52:06 -0500</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>PyQt Collapsable Widget</title>
+        <description>&lt;h2 id=&quot;maya-framelayout&quot;&gt;Maya frameLayout&lt;/h2&gt; &lt;p&gt;I wanted to add a submenu in my UI for a Maya script. But I wanted it to be &lt;strong&gt;collapsable&lt;/strong&gt;, so that the user could show/hide the info. I had used the &lt;em&gt;Maya&lt;/em&gt; &lt;strong&gt;frameLayout&lt;/strong&gt; command so I was looking for something similar in PyQt, like this:&lt;/p&gt; &lt;p&gt;&lt;img src=&quot;http://byoute.io/assets/images/posts/pyqt-collapsable-widget/maya_framelayout.gif&quot; alt=&quot;Maya frameLayout command&quot; /&gt;&lt;/p&gt; &lt;p&gt;After several researches, I found out that this kind of layout was integrated only with Qt5. So for my PyQt4 UI, I had to do a personnalized widget.&lt;/p&gt; &lt;p&gt;With the help from &lt;a href=&quot;https://groups.google.com/d/msg/python_inside_maya/vO1pvA4YhF0/WpXMlkpgl54J&quot;&gt;this post&lt;/a&gt;, especially &lt;a href=&quot;http://pastebin.com/qYgDDYsB&quot;&gt;this chunk&lt;/a&gt;, I came up with the following...</description>
+        <pubDate>Tue, 01 Mar 2016 17:30:00 -0500</pubDate>
+        <link>http://byoute.io/pyqt-collapsable-widget/</link>
+        <guid isPermaLink="true">http://byoute.io/pyqt-collapsable-widget/</guid>
+        
+        <category>pyqt</category>
+        
+        <category>widget</category>
+        
+        <category>collapsable</category>
+        
+        <category>python</category>
+        
+        <category>framelayout</category>
+        
+        <category>maya</category>
+        
+        
+        <category>fix</category>
+        
+      </item>
+    
+      <item>
+        <title>How to PyAlembic - Finally overcome Alembic Python bindings</title>
+        <description>&lt;p&gt;Due to some changes at work, I had to recompile Alembic and had problems on the python bindings for PyAlembic. I used to version that was on the master branch (&lt;a href=&quot;https://github.com/alembic/alembic/commit/3682461d016b188f83e4639d08ffd784e85b3af9&quot;&gt;commit&lt;/a&gt;), because a lot of things were fixed since the last release (&lt;a href=&quot;https://github.com/alembic/alembic/releases/tag/1.5.8&quot;&gt;1.5.8&lt;/a&gt;).&lt;/p&gt; &lt;p&gt;Arrived at the PyAlembic step, everything &lt;em&gt;seemed&lt;/em&gt; to compile and link correctly.&lt;/p&gt; &lt;p&gt;And then, when I ran abcview&lt;/p&gt; &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; ./abcview&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt; &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&amp;gt; Traceback &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;most recent call last&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: File &lt;span class=&quot;s2&quot;&gt;&amp;quot;/home/alembic/python/examples/AbcView/bin/abcview&amp;quot;&lt;/span&gt;, line 84, in &amp;lt;module&amp;gt; &lt;span class=&quot;nv&quot;&gt;verbose&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;args.verbose File &lt;span class=&quot;s2&quot;&gt;&amp;quot;/home/alembic/python/examples/AbcView/lib/abcview/app.py&amp;quot;&lt;/span&gt;, line 1432, in create_app &lt;span class=&quot;nv&quot;&gt;win&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;...</description>
+        <pubDate>Mon, 15 Feb 2016 09:52:04 -0500</pubDate>
+        <link>http://byoute.io/how-to-pyalembic/</link>
+        <guid isPermaLink="true">http://byoute.io/how-to-pyalembic/</guid>
+        
+        <category>alembic</category>
+        
+        <category>c++</category>
+        
+        <category>python</category>
+        
+        <category>pyalembic</category>
+        
+        <category>ilmbase</category>
+        
+        <category>pyilmbase</category>
+        
+        <category>fedora</category>
+        
+        
+        <category>fix</category>
+        
+      </item>
+    
+  </channel>
+</rss>
